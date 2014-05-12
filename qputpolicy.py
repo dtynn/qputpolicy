@@ -8,6 +8,7 @@ class PutPolicy(object):
     def __init__(self, scope, expires=3600):
         self.scope = scope
         self.expires = expires
+        self.deadline = 0
         return
 
     def data(self):
