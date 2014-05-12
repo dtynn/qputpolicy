@@ -41,6 +41,9 @@ qputpolicy
     policy = PutPolicy(scope)
     policy.callbackUrl = "http://abc.com/callback"
     policy.callbackBody = "key=$(key)&hash=$(etag)"
+    # PutPolicy参数使用
+    # policy.item = value
+    # 的形式赋值。注意大小写。新增支持的参数不需要修改代码也可以使用。
 
     policy_data = policy.data()
 
